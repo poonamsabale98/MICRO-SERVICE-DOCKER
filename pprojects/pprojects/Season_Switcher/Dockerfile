@@ -11,7 +11,7 @@ RUN apt-get update && \
 EXPOSE 80
 
 # Copy the static ToDo app files to the Apache server directory
-COPY ./Season_Switcher/ /var/www/html/
+COPY ./season/ /var/www/html/
 
 # Start Apache in the foreground
 CMD ["apache2ctl", "-D", "FOREGROUND"]
